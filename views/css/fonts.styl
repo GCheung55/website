@@ -1,0 +1,19 @@
+font_face(title, name, path = "/fonts/")
+    font-family: title
+    src: url(path + name + ".eot")
+    src: url(path + name + ".eot#iefix") format("embedded-opentype"),
+        url(path + name + ".woff") format("woff"), 
+        url(path + name + ".ttf") format("truetype"), 
+        url(path + name + ".svg#" + name) format("svg")
+
+font_face_entypo()    
+    @font-face 
+        font_face("Entypo", "entypo")
+        font-weight: normal
+        font-style: normal
+
+font_face_entypo_social()
+    @font-face
+        font_face("Entypo Social", "entypo-social")
+        font-weight: normal
+        font-style: normal
